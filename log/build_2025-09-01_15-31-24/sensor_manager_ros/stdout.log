@@ -1,0 +1,5 @@
+[35m[1mConsolidate compiler generated dependencies of target sensor_manager_node[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/sensor_manager_node.dir/src/LidarSensor.cpp.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/sensor_manager_node.dir/src/SensorManager.cpp.o[0m
+[ 42%] [32mBuilding CXX object CMakeFiles/sensor_manager_node.dir/src/sensor_manager_node.cpp.o[0m
+[ 57%] [32m[1mLinking CXX executable sensor_manager_node[0m

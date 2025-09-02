@@ -1,0 +1,14 @@
+/home/vsohani/ros2_humble/src/sensor_manager_ros/install/sensor_manager_ros/lib/sensor_manager_ros/sensor_manager_node
+/home/vsohani/ros2_humble/src/sensor_manager_ros/install/sensor_manager_ros/share/ament_index/resource_index/package_run_dependencies/sensor_manager_ros
+/home/vsohani/ros2_humble/src/sensor_manager_ros/install/sensor_manager_ros/share/ament_index/resource_index/parent_prefix_path/sensor_manager_ros
+/home/vsohani/ros2_humble/src/sensor_manager_ros/install/sensor_manager_ros/share/sensor_manager_ros/environment/ament_prefix_path.dsv
+/home/vsohani/ros2_humble/src/sensor_manager_ros/install/sensor_manager_ros/share/sensor_manager_ros/environment/path.dsv
+/home/vsohani/ros2_humble/src/sensor_manager_ros/install/sensor_manager_ros/share/sensor_manager_ros/local_setup.bash
+/home/vsohani/ros2_humble/src/sensor_manager_ros/install/sensor_manager_ros/share/sensor_manager_ros/local_setup.sh
+/home/vsohani/ros2_humble/src/sensor_manager_ros/install/sensor_manager_ros/share/sensor_manager_ros/local_setup.zsh
+/home/vsohani/ros2_humble/src/sensor_manager_ros/install/sensor_manager_ros/share/sensor_manager_ros/local_setup.dsv
+/home/vsohani/ros2_humble/src/sensor_manager_ros/install/sensor_manager_ros/share/sensor_manager_ros/package.dsv
+/home/vsohani/ros2_humble/src/sensor_manager_ros/install/sensor_manager_ros/share/ament_index/resource_index/packages/sensor_manager_ros
+/home/vsohani/ros2_humble/src/sensor_manager_ros/install/sensor_manager_ros/share/sensor_manager_ros/cmake/sensor_manager_rosConfig.cmake
+/home/vsohani/ros2_humble/src/sensor_manager_ros/install/sensor_manager_ros/share/sensor_manager_ros/cmake/sensor_manager_rosConfig-version.cmake
+/home/vsohani/ros2_humble/src/sensor_manager_ros/install/sensor_manager_ros/share/sensor_manager_ros/package.xml

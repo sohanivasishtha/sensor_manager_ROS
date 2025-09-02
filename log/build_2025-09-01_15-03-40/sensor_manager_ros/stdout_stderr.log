@@ -1,0 +1,12 @@
+[35m[1mConsolidate compiler generated dependencies of target sensor_manager_node[0m
+[ 14%] [32mBuilding CXX object CMakeFiles/sensor_manager_node.dir/src/sensor_manager_node.cpp.o[0m
+[01m[K/home/vsohani/ros2_humble/src/sensor_manager_ros/src/sensor_manager_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/vsohani/ros2_humble/src/sensor_manager_ros/src/sensor_manager_node.cpp:35:41:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kconst[m[K’
+   35 |         LidarSensor::addSummaryFromScan([01;31m[Kconst[m[K std::vector<float>& ranges, double timestamp);
+      |                                         [01;31m[K^~~~~[m[K
+[01m[K/home/vsohani/ros2_humble/src/sensor_manager_ros/src/sensor_manager_node.cpp:35:75:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kdouble[m[K’
+   35 |         LidarSensor::addSummaryFromScan(const std::vector<float>& ranges, [01;31m[Kdouble[m[K timestamp);
+      |                                                                           [01;31m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/sensor_manager_node.dir/build.make:76: CMakeFiles/sensor_manager_node.dir/src/sensor_manager_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/sensor_manager_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,15 @@
+[01m[K/home/vsohani/ros2_humble/src/sensor_manager_ros/src/Sensor.cpp:[m[K In member function ‘[01m[Kvirtual bool Sensor::validateReading(float)[m[K’:
+[01m[K/home/vsohani/ros2_humble/src/sensor_manager_ros/src/Sensor.cpp:17:36:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kvalue[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   17 | bool Sensor::validateReading([01;35m[Kfloat value[m[K){
+      |                              [01;35m[K~~~~~~^~~~~[m[K
+[01m[K/home/vsohani/ros2_humble/src/sensor_manager_ros/src/LidarSensor.cpp:[m[K In member function ‘[01m[Kvirtual void LidarSensor::addSummaryFromScan(const std::vector<float>&, double)[m[K’:
+[01m[K/home/vsohani/ros2_humble/src/sensor_manager_ros/src/LidarSensor.cpp:60:12:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kdouble variance_sum[m[K’
+   60 |     double [01;31m[Kvariance_sum[m[K = 0.0;
+      |            [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/vsohani/ros2_humble/src/sensor_manager_ros/src/LidarSensor.cpp:40:12:[m[K [01;36m[Knote: [m[K‘[01m[Kdouble variance_sum[m[K’ previously declared here
+   40 |     double [01;36m[Kvariance_sum[m[K = 0;
+      |            [01;36m[K^~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/sensor_manager_node.dir/build.make:132: CMakeFiles/sensor_manager_node.dir/src/LidarSensor.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/sensor_manager_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

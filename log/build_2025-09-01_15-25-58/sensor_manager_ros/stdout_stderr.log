@@ -1,0 +1,15 @@
+[35m[1mConsolidate compiler generated dependencies of target sensor_manager_node[0m
+[ 14%] [32mBuilding CXX object CMakeFiles/sensor_manager_node.dir/src/SensorManager.cpp.o[0m
+[01m[K/home/vsohani/ros2_humble/src/sensor_manager_ros/src/SensorManager.cpp:88:8:[m[K [01;31m[Kerror: [m[Kdeduced class type ‘[01m[Kvector[m[K’ in function return type
+   88 | vector [01;31m[KSensorManager[m[K::processLaserScan(const sensor_msgs::msg::LaserScan::SharedPtr msg){
+      |        [01;31m[K^~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/vector:67[m[K,
+                 from [01m[K/home/vsohani/ros2_humble/src/sensor_manager_ros/include/Sensor.h:3[m[K,
+                 from [01m[K/home/vsohani/ros2_humble/src/sensor_manager_ros/include/SensorManager.h:3[m[K,
+                 from [01m[K/home/vsohani/ros2_humble/src/sensor_manager_ros/src/SensorManager.cpp:1[m[K:
+[01m[K/usr/include/c++/11/bits/stl_vector.h:389:11:[m[K [01;36m[Knote: [m[K‘[01m[Ktemplate<class _Tp, class _Alloc> class std::vector[m[K’ declared here
+  389 |     class [01;36m[Kvector[m[K : protected _Vector_base<_Tp, _Alloc>
+      |           [01;36m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/sensor_manager_node.dir/build.make:90: CMakeFiles/sensor_manager_node.dir/src/SensorManager.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/sensor_manager_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

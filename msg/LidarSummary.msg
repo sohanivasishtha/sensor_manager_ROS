@@ -1,0 +1,5 @@
+float64 timestamp
+float32 min_distance
+float32 max_distance
+float32 std_dev
+float32 entropy
