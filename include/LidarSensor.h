@@ -1,6 +1,8 @@
 #pragma once
 #include <iostream>
 #include "Sensor.h"
+#include "sensor_manager_ros/msg/lidar_summary.hpp"
+#include <optional>
 
 struct LidarSummary{
     float max_distance;
@@ -19,7 +21,8 @@ class LidarSensor: public Sensor{
         virtual ~LidarSensor();
         virtual void readValue() override;
         virtual bool validateReading(float value) override;
-        virtual void addSummaryFromScan(const std::vector<float>& ranges, double timestamps);
+        virtual std::optional<sensor_manager_ros::msg::LidarSummary> addSummaryFromScan(const std::vector<float>& ranges, double timestamps);
+        
     
     private:
         std::vector <LidarSummary> summaries;

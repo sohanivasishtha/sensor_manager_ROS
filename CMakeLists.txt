@@ -34,9 +34,15 @@ src/TemperatureSensor.cpp
 #link ROS dependencies
 ament_target_dependencies(sensor_manager_node rclcpp std_msgs sensor_msgs)
 
+rosidl_get_typesupport_target(cpp_typesupport_target ${PROJECT_NAME} "rosidl_typesupport_cpp")
+target_link_libraries(sensor_manager_node "${cpp_typesupport_target}")
+
+
+#rosidl_target_interfaces(sensor_manager_node ${PROJECT_NAME} "rosidl_typesupport_cpp")
+
 #Install Executable
 install(TARGETS
-sensor_manager_node
+sensor_manager_node 
 DESTINATION lib/${PROJECT_NAME})
 
 

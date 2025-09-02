@@ -85,13 +85,15 @@ void SensorManager::exportToCSV(string filename){
     cout <<" file generated" << endl;
 }
 
-void SensorManager::processLaserScan(const sensor_msgs::msg::LaserScan::SharedPtr msg){
+
+
+std::optional<sensor_manager_ros::msg::LidarSummary> SensorManager::processLaserScan(const sensor_msgs::msg::LaserScan::SharedPtr msg){
     LidarSensor lidar;
 
     std::vector<float> ranges = msg->ranges;
     double timestamps = rclcpp::Time(msg->header.stamp).seconds();
 
-    lidar.addSummaryFromScan(ranges,timestamps);
+    return lidar.addSummaryFromScan(ranges,timestamps);
 
     //cout << "Processing scan. Range count = " << msg->ranges.size() << endl;
 

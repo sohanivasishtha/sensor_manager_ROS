@@ -27,12 +27,12 @@ bool LidarSensor::validateReading(float value){
             return false;
 }
 
-void LidarSensor::addSummaryFromScan(const std::vector<float>& ranges, double timestamp){
+std::optional<sensor_manager_ros::msg::LidarSummary> LidarSensor::addSummaryFromScan(const std::vector<float>& ranges, double timestamp){
     
-    if(ranges.empty()) return ;
+    if(ranges.empty()) return std::nullopt;
 
-    LidarSummary summary{};
-    summary.timestamp =timestamp;
+    sensor_manager_ros::msg::LidarSummary summary;
+
 
     float min_val = std::numeric_limits<float>::max();
     float max_val = -std::numeric_limits<float>::max();
@@ -51,7 +51,7 @@ void LidarSensor::addSummaryFromScan(const std::vector<float>& ranges, double ti
         count++;
 
     }
-    if (count == 0) return;
+    if (count == 0) return std::nullopt;
 
     double mean = sum/ count;
 
@@ -86,16 +86,18 @@ void LidarSensor::addSummaryFromScan(const std::vector<float>& ranges, double ti
         
     }
     // Push back all the results into summary
-    
+    summary.timestamp = timestamp;
     summary.min_distance = min_val;
     summary.max_distance = max_val;
     summary.std_dev = std_dev;
     summary.entropy = H;
-    summaries.push_back(summary);
+    
 
-    RCLCPP_INFO(rclcpp::get_logger("LidarSensor"),
+    /*RCLCPP_INFO(rclcpp::get_logger("LidarSensor"),
     "Summary -> timestamp: %.2f | min: %.3f | max: %.3f | std_dev: %.3f | entropy: %.3f",
     summary.timestamp, summary.min_distance, summary.max_distance, summary.std_dev, summary.entropy );
-        
+      */
+     
+    return summary;
 
 }

@@ -14,7 +14,7 @@ void Sensor::readValue(){
     cout << " Generic Sensor Value" << endl;
 }
 
-bool Sensor::validateReading(float value){
+bool Sensor::validateReading(float /*value*/){
     return true; 
 }
 
